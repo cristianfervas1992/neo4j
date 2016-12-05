@@ -31,8 +31,12 @@ public class Main {
 
 
 			TwitterProcessor twitterProcessor = new TwitterProcessor();
-			twitterProcessor.process(collection, session);
-
+			//descomentar lo de abajo para actualizar base de datos de grafos
+			//twitterProcessor.process(collection, session);
+			
+			//id del usuario que se desea calcular el snp
+			twitterProcessor.SNP(session,"65505936");
+			
 			session.close();
 			driver.close();
 
