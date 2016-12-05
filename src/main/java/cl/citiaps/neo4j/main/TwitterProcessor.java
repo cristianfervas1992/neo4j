@@ -122,6 +122,7 @@ public class TwitterProcessor{
 			else{
 				System.out.println("No era espanol: "+texto);
 			}
+			System.out.println("Agregado en git");
 			//System.out.println("--------------------------------------------------");
 			//System.out.println("--------------------------------------------------");
 		}
