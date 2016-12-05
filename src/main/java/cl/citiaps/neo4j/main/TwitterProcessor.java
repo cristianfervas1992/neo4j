@@ -75,7 +75,7 @@ public class TwitterProcessor{
 					//busco las menciones
 					Document entidades = (Document)doc.get("entities");
 					List<Document> mencionados = (ArrayList<Document>)entidades.get("user_mentions");
-					System.out.println(mencionados.size());
+					//System.out.println(mencionados.size());
 					//relaciones de mención
 					for(Document menc : mencionados){
 						String user_men = menc.getString("screen_name").toLowerCase();;
@@ -119,14 +119,18 @@ public class TwitterProcessor{
 					}
 					
 			}
+			/*
 			else{
 				System.out.println("No era espanol: "+texto);
 			}
-			System.out.println("Agregado en git");
+			*/
+			//System.out.println("Agregado en git");
 			//System.out.println("--------------------------------------------------");
 			//System.out.println("--------------------------------------------------");
 		}
-		//System.out.println("asdasdasdasdasdasdasdasdsadsadasdasdasdasdsadsadasd");
+		System.out.println("=====================================");
+		System.out.println("Nodos y relaciones creados con exito.");
+		System.out.println("=====================================");
 	}
 
 
